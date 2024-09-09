@@ -3,14 +3,14 @@
 # 	* sale_stock
 # 
 # Translators:
-# Tony Ng, 2023
+# Tony Ng, 2024
 # Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 10:37+0000\n"
+"POT-Creation-Date: 2024-08-13 10:28+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/odoo/teams/41243/zh_TW/)\n"
@@ -32,27 +32,27 @@ msgstr ""
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-clock-o\"/> Awaiting arrival"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-clock-o\"/> 等候到貨"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-clock-o\"/>Preparation"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-clock-o\"/>準備中"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-times\"/> Cancelled"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-times\"/> 已取消"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-times\"/>Cancelled"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-times\"/>已取消"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-truck\"/> Received"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-truck\"/> 已收貨"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.stock_production_lot_view_form
@@ -66,6 +66,9 @@ msgid ""
 "                                        <i class=\"fa fa-fw fa-truck\"/> Shipped\n"
 "                                    </span>"
 msgstr ""
+"<span class=\"small badge text-bg-success orders_label_text_align\">\n"
+"                                        <i class=\"fa fa-fw fa-truck\"/> 已發貨\n"
+"                                    </span>"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_cancel_view_form_inherit
@@ -74,6 +77,9 @@ msgid ""
 "                    Some deliveries are already done. Returns can be created from the Delivery Orders.\n"
 "                </span>"
 msgstr ""
+"<span invisible=\"not display_delivery_alert\">\n"
+"                    部份送貨已完成。可從送貨單建立退貨。\n"
+"                </span>"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.report_delivery_document_inherit_sale_stock
@@ -313,7 +319,7 @@ msgstr "國際貿易術語詳情"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "Incoterm:"
-msgstr ""
+msgstr "國際貿易術語："
 
 #. module: sale_stock
 #: model:ir.model.fields,help:sale_stock.field_sale_order__incoterm
@@ -355,7 +361,7 @@ msgstr "日記賬項目"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "Last Delivery Orders"
-msgstr ""
+msgstr "最新送貨單"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line__customer_lead
@@ -453,6 +459,11 @@ msgstr "補貨組"
 #: model:ir.model,name:sale_stock.model_product_template
 msgid "Product"
 msgstr "商品"
+
+#. module: sale_stock
+#: model:ir.model,name:sale_stock.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "產品移動(移庫明細)"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line__qty_available_today
@@ -604,6 +615,11 @@ msgid "Shipping Policy"
 msgstr "交貨策略"
 
 #. module: sale_stock
+#: model:ir.model.fields.selection,name:sale_stock.selection__sale_order__delivery_status__started
+msgid "Started"
+msgstr "已發貨"
+
+#. module: sale_stock
 #: model:ir.model,name:sale_stock.model_stock_move
 msgid "Stock Move"
 msgstr "庫存移動"
@@ -670,7 +686,7 @@ msgstr "訂購數量不可低於已交貨數量。請改為在庫存中建立退
 msgid ""
 "The ordered quantity of a sale order line cannot be decreased below the "
 "amount already delivered. Instead, create a return in your inventory."
-msgstr ""
+msgstr "銷售訂單行的訂購數量不能低於已交付的數量。相反，應在庫存中創建退貨。"
 
 #. module: sale_stock
 #. odoo-javascript

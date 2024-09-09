@@ -3,16 +3,16 @@
 # 	* sale_stock
 # 
 # Translators:
-# Maitê Dietze, 2024
 # Wil Odoo, 2024
+# Maitê Dietze, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 10:37+0000\n"
+"POT-Creation-Date: 2024-08-13 10:28+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2024\n"
+"Last-Translator: Maitê Dietze, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/odoo/teams/41243/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -32,7 +32,7 @@ msgstr ""
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-clock-o\"/> Awaiting arrival"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-clock-o\"/> Aguardando chegada"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
@@ -42,7 +42,7 @@ msgstr "<i class=\"fa fa-fw fa-clock-o\"/>Preparação"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-times\"/> Cancelled"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-times\"/> Cancelado"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
@@ -52,7 +52,7 @@ msgstr "<i class=\"fa fa-fw fa-times\"/>Cancelado"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-truck\"/> Received"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-truck\"/> Recebido"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.stock_production_lot_view_form
@@ -66,6 +66,9 @@ msgid ""
 "                                        <i class=\"fa fa-fw fa-truck\"/> Shipped\n"
 "                                    </span>"
 msgstr ""
+"<span class=\"small badge text-bg-success orders_label_text_align\">\n"
+"                                        <i class=\"fa fa-fw fa-truck\"/> Enviado\n"
+"                                    </span>"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_cancel_view_form_inherit
@@ -347,7 +350,7 @@ msgstr "Rotas de inventário"
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line__is_mto
 msgid "Is Mto"
-msgstr "É sob encomenda?"
+msgstr "É PSE"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order__json_popover
@@ -367,7 +370,7 @@ msgstr "Item do diário"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "Last Delivery Orders"
-msgstr ""
+msgstr "Pedidos da última entrega"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line__customer_lead
@@ -476,6 +479,11 @@ msgid "Product"
 msgstr "Produto"
 
 #. module: sale_stock
+#: model:ir.model,name:sale_stock.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "Movimentações do produto (linha da movimentação de estoque)"
+
+#. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line__qty_available_today
 msgid "Qty Available Today"
 msgstr "Quantidade disponível hoje"
@@ -509,7 +517,7 @@ msgstr "Demanda restante disponível em"
 #: code:addons/sale_stock/models/sale_order_line.py:0
 #, python-format
 msgid "Replenish on Order (MTO)"
-msgstr "Reabastecer no pedido (sob demanda)"
+msgstr "Reposição por pedido (sob demanda)"
 
 #. module: sale_stock
 #. odoo-javascript
@@ -623,6 +631,11 @@ msgstr "Enviar produtos o mais rápido possível, com pedidos em espera"
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order__picking_policy
 msgid "Shipping Policy"
 msgstr "Política de envio"
+
+#. module: sale_stock
+#: model:ir.model.fields.selection,name:sale_stock.selection__sale_order__delivery_status__started
+msgid "Started"
+msgstr "Iniciado"
 
 #. module: sale_stock
 #: model:ir.model,name:sale_stock.model_stock_move

@@ -3,14 +3,15 @@
 # 	* sale_stock
 # 
 # Translators:
-# Sarah Park, 2023
+# Sarah Park, 2024
+# Daye Jeong, 2024
 # Wil Odoo, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-15 10:37+0000\n"
+"POT-Creation-Date: 2024-08-13 10:28+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Wil Odoo, 2024\n"
 "Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
@@ -32,7 +33,7 @@ msgstr ""
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-clock-o\"/> Awaiting arrival"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-clock-o\"/> 도착 대기 중"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
@@ -42,7 +43,7 @@ msgstr "<i class=\"fa fa-fw fa-clock-o\"/>예비"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-times\"/> Cancelled"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-times\"/> 취소됨"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
@@ -52,7 +53,7 @@ msgstr "<i class=\"fa fa-fw fa-times\"/>취소됨"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "<i class=\"fa fa-fw fa-truck\"/> Received"
-msgstr ""
+msgstr "<i class=\"fa fa-fw fa-truck\"/> 수신됨"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.stock_production_lot_view_form
@@ -66,6 +67,9 @@ msgid ""
 "                                        <i class=\"fa fa-fw fa-truck\"/> Shipped\n"
 "                                    </span>"
 msgstr ""
+"<span class=\"small badge text-bg-success orders_label_text_align\">\n"
+"                                        <i class=\"fa fa-fw fa-truck\"/> 배송 완료\n"
+"                                    </span>"
 
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_cancel_view_form_inherit
@@ -361,7 +365,7 @@ msgstr "전표 항목"
 #. module: sale_stock
 #: model_terms:ir.ui.view,arch_db:sale_stock.sale_order_portal_content_inherit_sale_stock
 msgid "Last Delivery Orders"
-msgstr ""
+msgstr "최근 배송 주문"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line__customer_lead
@@ -463,6 +467,11 @@ msgstr "조달 그룹"
 #: model:ir.model,name:sale_stock.model_product_template
 msgid "Product"
 msgstr "품목"
+
+#. module: sale_stock
+#: model:ir.model,name:sale_stock.model_stock_move_line
+msgid "Product Moves (Stock Move Line)"
+msgstr "품목 이동 (재고 이동 상세)"
 
 #. module: sale_stock
 #: model:ir.model.fields,field_description:sale_stock.field_sale_order_line__qty_available_today
@@ -614,6 +623,11 @@ msgid "Shipping Policy"
 msgstr "배송 정책"
 
 #. module: sale_stock
+#: model:ir.model.fields.selection,name:sale_stock.selection__sale_order__delivery_status__started
+msgid "Started"
+msgstr "시작"
+
+#. module: sale_stock
 #: model:ir.model,name:sale_stock.model_stock_move
 msgid "Stock Move"
 msgstr "재고 이동"
@@ -681,6 +695,7 @@ msgid ""
 "The ordered quantity of a sale order line cannot be decreased below the "
 "amount already delivered. Instead, create a return in your inventory."
 msgstr ""
+"판매주문서 줄에 있는 주문 수량은 이미 배송 완료된 수량보다 적을 수 없습니다. 대신, 재고에 반품 항목을 생성하시기 바랍니다."
 
 #. module: sale_stock
 #. odoo-javascript

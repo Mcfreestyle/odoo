@@ -248,18 +248,17 @@ class Module(models.Model):
 
     @api.depends('icon')
     def _get_icon_image(self):
+        self.icon_image = ''
         for module in self:
-            module.icon_image = ''
+            if not module.id:
+                continue
             if module.icon:
-                path_parts = module.icon.split('/')
-                path = os.path.join(path_parts[1], *path_parts[2:])
-            elif module.id:
-                path = modules.module.get_module_icon_path(module)
+                path = os.path.join(module.icon.lstrip("/"))
             else:
-                path = ''
+                path = modules.module.get_module_icon_path(module)
             if path:
                 try:
-                    with tools.file_open(path, 'rb') as image_file:
+                    with tools.file_open(path, 'rb', filter_ext=('.png', '.svg', '.gif', '.jpeg', '.jpg')) as image_file:
                         module.icon_image = base64.b64encode(image_file.read())
                 except FileNotFoundError:
                     module.icon_image = ''
@@ -813,9 +812,14 @@ class Module(models.Model):
 
     def _update_category(self, category='Uncategorized'):
         current_category = self.category_id
+        seen = set()
         current_category_path = []
         while current_category:
             current_category_path.insert(0, current_category.name)
+            seen.add(current_category.id)
+            if current_category.parent_id.id in seen:
+                current_category.parent_id = False
+                _logger.warning('category %r ancestry loop has been detected and fixed', current_category)
             current_category = current_category.parent_id
 
         categs = category.split('/')
@@ -924,11 +928,12 @@ class Module(models.Model):
             if not modpath:
                 continue
             for lang in langs:
-                po_paths = get_po_paths(module_name, lang)
-                for po_path in po_paths:
+                is_lang_imported = False
+                for po_path in get_po_paths(module_name, lang):
                     _logger.info('module %s: loading translation file %s for language %s', module_name, po_path, lang)
                     translation_importer.load_file(po_path, lang)
-                if lang != 'en_US' and not po_paths:
+                    is_lang_imported = True
+                if lang != 'en_US' and not is_lang_imported:
                     _logger.info('module %s: no translation for language %s', module_name, lang)
 
         translation_importer.save(overwrite=overwrite)

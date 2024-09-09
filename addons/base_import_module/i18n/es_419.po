@@ -5,15 +5,15 @@
 # Translators:
 # Wil Odoo, 2023
 # Lucia Pacheco, 2023
-# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2023
 # Iran Villalobos López, 2023
+# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2024
 # Fernanda Alvarez, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-26 21:55+0000\n"
+"POT-Creation-Date: 2024-08-13 10:27+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Fernanda Alvarez, 2024\n"
 "Language-Team: Spanish (Latin America) (https://app.transifex.com/odoo/teams/41243/es_419/)\n"
@@ -37,6 +37,7 @@ msgstr ""
 "Si necesita temas para el sitio web puede descargarlos en https://github.com/odoo/design-themes.\n"
 
 #. module: base_import_module
+#: model_terms:ir.ui.view,arch_db:base_import_module.module_form_apps_inherit
 #: model_terms:ir.ui.view,arch_db:base_import_module.module_view_kanban_apps_inherit
 msgid "Activate"
 msgstr "Activar"
@@ -93,9 +94,33 @@ msgid "Created on"
 msgstr "Creado el"
 
 #. module: base_import_module
+#: model_terms:ir.ui.view,arch_db:base_import_module.view_base_module_import
+msgid ""
+"Demo data should only be used on test databases. Once they are loaded, they "
+"cannot be entirely removed!"
+msgstr ""
+"Los datos de demostración solo deben utilizarse en las bases de datos de "
+"prueba. No podrá eliminarlos después de cargarlos."
+
+#. module: base_import_module
 #: model:ir.model.fields,field_description:base_import_module.field_base_import_module__display_name
 msgid "Display Name"
 msgstr "Nombre en pantalla"
+
+#. module: base_import_module
+#. odoo-python
+#: code:addons/base_import_module/models/ir_module.py:0
+#, python-format
+msgid ""
+"Error while importing module '%(module)s'.\n"
+"\n"
+" %(error_message)s \n"
+"\n"
+msgstr ""
+"Error al importar el módulo '%(module)s'.\n"
+"\n"
+" %(error_message)s \n"
+"\n"
 
 #. module: base_import_module
 #. odoo-python
@@ -159,6 +184,13 @@ msgstr "Sectores"
 #: model_terms:ir.ui.view,arch_db:base_import_module.view_base_module_import
 msgid "Install"
 msgstr "Instalar"
+
+#. module: base_import_module
+#. odoo-python
+#: code:addons/base_import_module/models/ir_module.py:0
+#, python-format
+msgid "Install an Industry"
+msgstr "Instalar un sector"
 
 #. module: base_import_module
 #: model_terms:ir.ui.view,arch_db:base_import_module.view_base_module_import
@@ -296,6 +328,7 @@ msgid "The module %s cannot be downloaded"
 msgstr "No se puede descargar el módulo %s "
 
 #. module: base_import_module
+#: model_terms:ir.ui.view,arch_db:base_import_module.module_form_apps_inherit
 #: model_terms:ir.ui.view,arch_db:base_import_module.module_view_kanban_apps_inherit
 msgid "Upgrade"
 msgstr "Actualizar"

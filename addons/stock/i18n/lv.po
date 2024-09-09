@@ -10,16 +10,16 @@
 # Arnis Putniņš <arnis@allegro.lv>, 2023
 # Anzelika Adejanova, 2023
 # Martin Trigaux, 2023
-# Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2023
 # InfernalLV <karlisdreizis@gmail.com>, 2023
-# ievaputnina <ievai.putninai@gmail.com>, 2023
+# ievaputnina <ievai.putninai@gmail.com>, 2024
+# Armīns Jeltajevs <armins.jeltajevs@gmail.com>, 2024
 # Will Sensors, 2024
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-05 12:31+0000\n"
+"POT-Creation-Date: 2024-08-13 10:26+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Will Sensors, 2024\n"
 "Language-Team: Latvian (https://app.transifex.com/odoo/teams/41243/lv/)\n"
@@ -252,7 +252,7 @@ msgstr ""
 #: code:addons/stock/models/stock_rule.py:0
 #, python-format
 msgid "+ %d day(s)"
-msgstr ""
+msgstr "+ %d diena(-as)"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_stock_rule
@@ -269,7 +269,7 @@ msgstr ""
 msgid ""
 ".\n"
 "            Manual actions may be needed."
-msgstr ""
+msgstr "Var būt nepieciešamas manuālas darbības."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_orderpoint_snooze__predefined_date__day
@@ -309,7 +309,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_package_barcode_small
 msgid "2023-01-01"
-msgstr ""
+msgstr "2023-01-01"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_picking
@@ -321,7 +321,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.report_package_barcode
 #: model_terms:ir.ui.view,arch_db:stock.report_picking
 msgid "3.00"
-msgstr ""
+msgstr "3.00"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__lot_label_layout__print_format__4x12
@@ -1104,6 +1104,11 @@ msgid "Archived"
 msgstr "Arhivēts"
 
 #. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.view_picking_form
+msgid "Are you sure you want to cancel this transfer?"
+msgstr ""
+
+#. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_picking__move_type__direct
 msgid "As soon as possible"
 msgstr ""
@@ -1335,7 +1340,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_stock_barcode
 msgid "Barcode Scanner"
-msgstr ""
+msgstr "Svītrkoda skenētājs"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__valid_ean
@@ -1358,6 +1363,8 @@ msgid ""
 "Below text serves as a suggestion and doesn’t engage Odoo S.A. "
 "responsibility."
 msgstr ""
+"Tālāk tekstā sniegtais teksts kalpo kā ieteikums un neuzņemas Odoo S.A. "
+"atbildību."
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__res_partner__picking_warn__block
@@ -1689,7 +1696,7 @@ msgstr "Compute shipping costs and ship with DHL"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Compute shipping costs and ship with Easypost"
-msgstr ""
+msgstr "Aprēķiniet nosūtīšanas izmaksas un nosūtiet ar Easypost"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -1699,12 +1706,12 @@ msgstr "Compute shipping costs and ship with FedEx"
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Compute shipping costs and ship with Sendcloud"
-msgstr ""
+msgstr "Aprēķiniet nosūtīšanas izmaksas un nosūtiet sūtījumu ar Sendcloud"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Compute shipping costs and ship with Shiprocket"
-msgstr ""
+msgstr "Aprēķiniet piegādes izmaksas un nosūtiet ar Shiprocket"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
@@ -1831,6 +1838,9 @@ msgid ""
 "Conversion between Units of Measure can only occur if they belong to the "
 "same category. The conversion will be made based on the ratios."
 msgstr ""
+"Mērvienību konvertēšana starp mērvienībām var notikt tikai tad, ja tās "
+"pieder vienai un tai pašai kategorijai. Pārrēķins tiks veikts, pamatojoties "
+"uz attiecībām."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_location__posx
@@ -2188,7 +2198,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_dhl
 msgid "DHL Express Connector"
-msgstr ""
+msgstr "DHL Express savienotājs"
 
 #. module: stock
 #. odoo-javascript
@@ -2572,6 +2582,8 @@ msgid ""
 "of the product: whether it will be bought, manufactured, replenished on "
 "order, etc."
 msgstr ""
+"Atkarībā no instalētajiem moduļiem tas ļaus jums noteikt produkta maršrutu: "
+"vai tas tiks nopirkts, izgatavots, papildināts pēc pasūtījuma utt."
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_lot__note
@@ -2599,13 +2611,13 @@ msgstr "Apraksts čekos"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move__description_picking
 msgid "Description of Picking"
-msgstr ""
+msgstr "Paņemšanas apraksts"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__description_pickingout
 #: model:ir.model.fields,field_description:stock.field_product_template__description_pickingout
 msgid "Description on Delivery Orders"
-msgstr ""
+msgstr "Piegādes pasūtījumu apraksts"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__description_picking
@@ -2617,13 +2629,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_product_product__description_pickingin
 #: model:ir.model.fields,field_description:stock.field_product_template__description_pickingin
 msgid "Description on Receptions"
-msgstr ""
+msgstr "Saņemšanas apraksts"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_delivery_document
 #: model_terms:ir.ui.view,arch_db:stock.report_picking
 msgid "Description on transfer"
-msgstr ""
+msgstr "Pārveduma apraksts"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_move_line__description_picking
@@ -2911,7 +2923,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_easypost
 msgid "Easypost Connector"
-msgstr ""
+msgstr "Easypost savienotājs"
 
 #. module: stock
 #. odoo-python
@@ -2994,7 +3006,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.exception_on_picking
 msgid "Exception(s):"
-msgstr ""
+msgstr "Izņēmums(-i):"
 
 #. module: stock
 #. odoo-python
@@ -3058,7 +3070,7 @@ msgstr "Februāris"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_fedex
 msgid "FedEx Connector"
-msgstr ""
+msgstr "FedEx savienotājs"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_package_destination__filtered_location
@@ -3141,7 +3153,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_form
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_tree_editable
 msgid "Forecast Report"
-msgstr ""
+msgstr "Prognozes ziņojums"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_product_product__virtual_available
@@ -3346,6 +3358,13 @@ msgstr "Ģenerēt"
 #: code:addons/stock/static/src/widgets/generate_serial.js:0
 #, python-format
 msgid "Generate Serials numbers"
+msgstr ""
+
+#. module: stock
+#. odoo-javascript
+#: code:addons/stock/static/src/widgets/lots_dialog.xml:0
+#, python-format
+msgid "Generate Serials/Lots"
 msgstr ""
 
 #. module: stock
@@ -3784,6 +3803,13 @@ msgstr "Importēt"
 #: code:addons/stock/static/src/widgets/generate_serial.js:0
 #, python-format
 msgid "Import Lots"
+msgstr ""
+
+#. module: stock
+#. odoo-javascript
+#: code:addons/stock/static/src/widgets/lots_dialog.xml:0
+#, python-format
+msgid "Import Serials/Lots"
 msgstr ""
 
 #. module: stock
@@ -4581,6 +4607,13 @@ msgid "Locations"
 msgstr "Posteņi"
 
 #. module: stock
+#. odoo-python
+#: code:addons/stock/models/stock_picking.py:0
+#, python-format
+msgid "Locations to update"
+msgstr ""
+
+#. module: stock
 #: model:ir.actions.server,name:stock.action_toggle_is_locked
 msgid "Lock/Unlock"
 msgstr ""
@@ -4600,6 +4633,11 @@ msgstr "Preču Partija"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__lot_label_format
 msgid "Lot Label Format to auto-print"
+msgstr ""
+
+#. module: stock
+#: model:ir.model,name:stock.model_report_stock_label_lot_template_view
+msgid "Lot Label Report"
 msgstr ""
 
 #. module: stock
@@ -5125,7 +5163,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.exception_on_picking
 msgid "Next transfer(s) impacted:"
-msgstr ""
+msgstr "Nākamais(-ie) pārskaitījums(-i), kas ietekmē:"
 
 #. module: stock
 #. odoo-python
@@ -5191,6 +5229,13 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_get_picking_type_operations
 msgid "No operations found. Let's create a transfer!"
+msgstr ""
+
+#. module: stock
+#. odoo-python
+#: code:addons/stock/models/stock_move.py:0
+#, python-format
+msgid "No product found to generate Serials/Lots for."
 msgstr ""
 
 #. module: stock
@@ -5337,7 +5382,7 @@ msgstr ""
 #: model:ir.model.fields,help:stock.field_stock_picking__message_needaction_counter
 #: model:ir.model.fields,help:stock.field_stock_scrap__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "To ziņojumu skaits, kuros nepieciešama rīcība"
 
 #. module: stock
 #: model:ir.model.fields,help:stock.field_stock_lot__message_has_error_counter
@@ -5576,7 +5621,7 @@ msgstr "Pasūtījumu parakstīja %s"
 #: model:ir.model.fields,field_description:stock.field_stock_orderpoint_snooze__orderpoint_ids
 #: model:ir.model.fields,field_description:stock.field_stock_replenishment_info__orderpoint_id
 msgid "Orderpoint"
-msgstr ""
+msgstr "Pasūtījuma punkts"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.view_move_form
@@ -5751,11 +5796,16 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_quant_package_form
 #: model_terms:ir.ui.view,arch_db:stock.view_quant_package_tree
 msgid "Package"
-msgstr ""
+msgstr "Paka"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_picking
 msgid "Package A"
+msgstr ""
+
+#. module: stock
+#: model_terms:ir.ui.view,arch_db:stock.report_picking
+msgid "Package B"
 msgstr ""
 
 #. module: stock
@@ -6368,7 +6418,7 @@ msgstr ""
 #: model:ir.model,name:stock.model_product_replenish
 #, python-format
 msgid "Product Replenish"
-msgstr ""
+msgstr "Pasūtīt klāt produktu"
 
 #. module: stock
 #: model:ir.actions.report,name:stock.action_report_stock_rule
@@ -6604,7 +6654,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_quality_control
 msgid "Quality"
-msgstr ""
+msgstr "Kvalitāte"
 
 #. module: stock
 #. odoo-python
@@ -6846,7 +6896,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:stock.field_stock_picking__rating_ids
 #: model:ir.model.fields,field_description:stock.field_stock_scrap__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Reitingi"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__stock_picking__state__assigned
@@ -6877,12 +6927,12 @@ msgstr ""
 #: model:ir.model.fields.selection,name:stock.selection__stock_picking_type__code__incoming
 #, python-format
 msgid "Receipt"
-msgstr ""
+msgstr "Saņemšana"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__reception_route_id
 msgid "Receipt Route"
-msgstr ""
+msgstr "Saņemšanas ceļš"
 
 #. module: stock
 #. odoo-python
@@ -6894,7 +6944,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_picking_internal_search
 #, python-format
 msgid "Receipts"
-msgstr ""
+msgstr "Saņemšana"
 
 #. module: stock
 #: model_terms:ir.actions.act_window,help:stock.action_picking_tree_incoming
@@ -7182,7 +7232,7 @@ msgstr ""
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.res_config_settings_view_form
 msgid "Request your vendors to deliver to your customers"
-msgstr ""
+msgstr "Pieprasiet saviem piegādātājiem veikt piegādi klientiem"
 
 #. module: stock
 #: model:res.groups,name:stock.group_stock_sign_delivery
@@ -7405,7 +7455,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.stock_location_route_tree
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse
 msgid "Routes"
-msgstr ""
+msgstr "Maršruti"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_product_product__has_available_route_ids
@@ -7426,6 +7476,14 @@ msgstr ""
 msgid ""
 "Routes will be created for these resupply warehouses and you can select them"
 " on products and product categories"
+msgstr ""
+
+#. module: stock
+#. odoo-python
+#: code:addons/stock/models/stock_location.py:0
+#: code:addons/stock/models/stock_rule.py:0
+#, python-format
+msgid "Rule %s belongs to %s while the route belongs to %s."
 msgstr ""
 
 #. module: stock
@@ -7506,7 +7564,7 @@ msgstr ""
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid "STANDARD TERMS AND CONDITIONS OF SALE"
-msgstr ""
+msgstr "Standarta pārdošanas nosacījumi"
 
 #. module: stock
 #. odoo-javascript
@@ -7659,7 +7717,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_sendcloud
 msgid "Sendcloud Connector"
-msgstr ""
+msgstr "Sendcloud savienotājs"
 
 #. module: stock
 #: model:mail.template,description:stock.mail_template_data_delivery_confirmation
@@ -7693,7 +7751,7 @@ msgstr "Sekvence"
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_picking_type__sequence_code
 msgid "Sequence Prefix"
-msgstr ""
+msgstr "Sekvences prefikss"
 
 #. module: stock
 #. odoo-python
@@ -7832,11 +7890,6 @@ msgid "Settings"
 msgstr "Uzstādījumi"
 
 #. module: stock
-#: model_terms:ir.ui.view,arch_db:stock.report_picking
-msgid "Shelf 1"
-msgstr ""
-
-#. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.report_inventory
 msgid "Shelf A"
 msgstr ""
@@ -7882,7 +7935,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_shiprocket
 msgid "Shiprocket Connector"
-msgstr ""
+msgstr "Shiprocket savienotājs"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_stock_warehouse__code
@@ -8253,7 +8306,7 @@ msgstr ""
 #: model:ir.model,name:stock.model_stock_forecasted_product_product
 #: model:ir.model,name:stock.model_stock_forecasted_product_template
 msgid "Stock Replenishment Report"
-msgstr ""
+msgstr "Noliktavas papildināšanas pārskats"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_request_count
@@ -8264,7 +8317,7 @@ msgstr ""
 #: model:ir.model,name:stock.model_stock_rule
 #: model:ir.model.fields,field_description:stock.field_stock_move__rule_id
 msgid "Stock Rule"
-msgstr ""
+msgstr "Noliktavas noteikums"
 
 #. module: stock
 #: model:ir.actions.act_window,name:stock.action_stock_rules_report
@@ -8314,17 +8367,17 @@ msgstr ""
 #. module: stock
 #: model:ir.model,name:stock.model_report_stock_report_stock_rule
 msgid "Stock rule report"
-msgstr ""
+msgstr "Pārskats par noliktavas noteikumiem"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_replenishment_info
 msgid "Stock supplier replenishment information"
-msgstr ""
+msgstr "Informācija par preču papildināšanu no piegādātājiem"
 
 #. module: stock
 #: model:ir.model,name:stock.model_stock_replenishment_option
 msgid "Stock warehouse replenishment option"
-msgstr ""
+msgstr "Krājumu noliktavas papildināšanas iespēja"
 
 #. module: stock
 #: model:ir.model.fields.selection,name:stock.selection__product_template__detailed_type__product
@@ -8499,6 +8552,10 @@ msgid ""
 "order to be valid, any derogation must be expressly agreed to in advance in "
 "writing."
 msgstr ""
+"Klients nepārprotami atsakās no saviem standarta noteikumiem un "
+"nosacījumiem, pat ja tie ir izstrādāti pēc šiem standarta pārdošanas "
+"noteikumiem un nosacījumiem. Lai atkāpe būtu spēkā, par to ir iepriekš "
+"skaidri rakstiski jāvienojas."
 
 #. module: stock
 #. odoo-python
@@ -8744,6 +8801,11 @@ msgid ""
 "on-demand flow. The requested delivery address will be the customer delivery"
 " address and not your warehouse."
 msgstr ""
+"Tas papildina dropshipping maršrutu, kas jāpiemēro produktiem, lai "
+"pieprasītu piegādātājiem piegādāt jūsu klientiem. Kad pārdošanas pasūtījums "
+"būs apstiprināts, dropship produkts radīs pirkuma pieprasījumu. Šī ir plūsma"
+" pēc pieprasījuma. Pieprasītā piegādes adrese būs klienta piegādes adrese, "
+"nevis jūsu noliktava."
 
 #. module: stock
 #. odoo-python
@@ -9076,7 +9138,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_editable
 msgid "Total On Hand"
-msgstr ""
+msgstr "Pieejams kopā"
 
 #. module: stock
 #: model_terms:ir.ui.view,arch_db:stock.product_product_stock_tree
@@ -9292,12 +9354,12 @@ msgstr "Reģistrētās izņēmuma aktivitātes veids."
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_ups
 msgid "UPS Connector"
-msgstr ""
+msgstr "UPS savienotājs"
 
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_usps
 msgid "USPS Connector"
-msgstr ""
+msgstr "USPS savienotājs"
 
 #. module: stock
 #. odoo-javascript
@@ -9425,7 +9487,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_inventory_editable
 #: model_terms:ir.ui.view,arch_db:stock.view_warehouse_orderpoint_tree_editable
 msgid "UoM"
-msgstr ""
+msgstr "Mērv"
 
 #. module: stock
 #: model:ir.ui.menu,name:stock.menu_stock_uom_categ_form_action
@@ -9509,6 +9571,7 @@ msgid "Used to order the 'All Operations' kanban view"
 msgstr ""
 
 #. module: stock
+#: model:ir.model,name:stock.model_res_users
 #: model:ir.model.fields,field_description:stock.field_stock_request_count__user_id
 #: model:res.groups,name:stock.group_stock_user
 #: model_terms:ir.ui.view,arch_db:stock.view_stock_quant_tree_inventory_editable
@@ -10063,6 +10126,14 @@ msgstr ""
 
 #. module: stock
 #. odoo-python
+#: code:addons/stock/models/stock_orderpoint.py:0
+#, python-format
+msgid ""
+"You can not create a snoozed orderpoint that is not manually triggered."
+msgstr ""
+
+#. module: stock
+#. odoo-python
 #: code:addons/stock/models/stock_move.py:0
 #, python-format
 msgid "You can not delete moves linked to another operation"
@@ -10114,6 +10185,15 @@ msgstr ""
 #: code:addons/stock/models/stock_move_line.py:0
 #, python-format
 msgid "You can only process 1.0 %s of products with unique serial number."
+msgstr ""
+
+#. module: stock
+#. odoo-python
+#: code:addons/stock/models/stock_orderpoint.py:0
+#, python-format
+msgid ""
+"You can only snooze manual orderpoints. You should rather archive 'auto-"
+"trigger' orderpoints if you do not want them to be triggered."
 msgstr ""
 
 #. module: stock
@@ -10207,6 +10287,16 @@ msgstr ""
 
 #. module: stock
 #. odoo-python
+#: code:addons/stock/models/stock_move_line.py:0
+#, python-format
+msgid ""
+"You cannot directly pack quantities from different transfers into the same "
+"package through this view. Try adding them to a batch picking and pack it "
+"there."
+msgstr ""
+
+#. module: stock
+#. odoo-python
 #: code:addons/stock/models/stock_quant.py:0
 #, python-format
 msgid "You cannot modify inventory loss quantity"
@@ -10219,6 +10309,15 @@ msgstr ""
 msgid ""
 "You cannot move the same package content more than once in the same transfer"
 " or split the same package into two location."
+msgstr ""
+
+#. module: stock
+#. odoo-python
+#: code:addons/stock/models/stock_picking.py:0
+#, python-format
+msgid ""
+"You cannot pack products into the same package when they are from different "
+"transfers with different operation types."
 msgstr ""
 
 #. module: stock
@@ -10385,13 +10484,6 @@ msgstr ""
 
 #. module: stock
 #. odoo-python
-#: code:addons/stock/models/stock_move.py:0
-#, python-format
-msgid "You need to set a Serial Number before generating more."
-msgstr ""
-
-#. module: stock
-#. odoo-python
 #: code:addons/stock/models/stock_move_line.py:0
 #, python-format
 msgid ""
@@ -10409,7 +10501,7 @@ msgstr ""
 #. module: stock
 #: model_terms:res.company,invoice_terms_html:stock.res_company_1
 msgid "You should update this document to reflect your T&amp;C."
-msgstr ""
+msgstr "Jums jāatjaunina šis dokuments, lai atspoguļotu jūsu T&amp;C."
 
 #. module: stock
 #. odoo-python
@@ -10501,7 +10593,7 @@ msgstr ""
 #. module: stock
 #: model:ir.model.fields,field_description:stock.field_res_config_settings__module_delivery_bpost
 msgid "bpost Connector"
-msgstr ""
+msgstr "bpost savienotājs"
 
 #. module: stock
 #: model:product.removal,method:stock.removal_closest
@@ -10680,10 +10772,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:stock.report_package_barcode
 #: model_terms:ir.ui.view,arch_db:stock.report_picking
 msgid "units"
-msgstr ""
+msgstr "vienības"
 
 #. module: stock
 #: model:mail.template,subject:stock.mail_template_data_delivery_confirmation
 msgid ""
 "{{ object.company_id.name }} Delivery Order (Ref {{ object.name or 'n/a' }})"
 msgstr ""
+"{{ object.company_id.name }} Piegādes pasūtījums (Ref {{ object.name or "
+"'n/a' }})"
